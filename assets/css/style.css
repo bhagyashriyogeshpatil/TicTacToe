@@ -302,4 +302,14 @@ footer {
     height: 30rem;
     top: 45%;
   }
+  /* Game screen */
+  .game {
+    height: 50vmin;
+    width: 50vmin;
+  }
+
+  .box {
+    height: 15vmin;
+    width: 15vmin;
+  }
 }
