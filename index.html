@@ -2,23 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
     <meta name="description"
         content="Tic Tac Toe - Tic-tac-toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols, aiming to be the first to form a horizontal, vertical, or diagonal line." />
     <meta name="keywords"
-        content="Tic-tac-toe, Game, Board, Strategy, Play, Challenge, Fun,  Entertainment, Family-friendly, Classic" />
+        content="Tic-tac-toe, Game, Board, Strategy, Play, Challenge, Fun,  Entertainment, Family-friendly, Classic">
     <!-- Title -->
     <title>Tic Tac Toe</title>
     <!-- Favicon -->
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div id="game-container">
+        <!-- top line of game container with instructions -->
+        <div class="top-line">
+            <i class="far fa-user-circle user-icon" id="user-icon" aria-hidden="true"></i>
+            <p id="username"></p>
+            <i id="instructions-icon" class="fa-solid fa-circle-info"></i>
+        </div>
+
         <!-- Main screen with game title and user login -->
         <div id="login-screen">
             <p>Welcome To</p>

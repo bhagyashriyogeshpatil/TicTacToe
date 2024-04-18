@@ -90,7 +90,32 @@ input:focus {
     background: linear-gradient(to right, #F8B500, #FCCD4D);
 }
 
+/* Style top line of the game container, icons and text inside it */
+.top-line {
+    line-height: 2.5rem;
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
 
+.user-icon {
+    font-size: 250%; 
+    float: left;
+}
+
+/* username display */
+.top-line p {
+    float: left;
+}
+
+/* Style instructions icon*/
+#instructions-icon {
+    font-size: 250%;
+    float: right;
+}
+
+#login-screen, #phrase, .result-text {
+    text-transform: uppercase;
+}
 
 /* Style of site footer */
 footer {
