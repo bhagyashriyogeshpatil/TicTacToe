@@ -115,9 +115,16 @@ for (let i = 0; i < boxes.length; i++) {
             boxes[i].innerText = "X";
             turnO = true;
         }
+        
         boxes[i].disabled = true;
+        count++;
 
         let isWinner = checkWinner();
+
+        if (count === 9 && !isWinner) {
+            console.log("inside if for");
+            gameDraw();
+        }
     });
 }
 
@@ -134,8 +141,8 @@ function checkWinner() {
   
       if (pos1Val !== "" && pos2Val !== "" && pos3Val !== "") {
         if (pos1Val === pos2Val && pos2Val === pos3Val) {
-            console.log("winner", pos1Val);
             showWinner(pos1Val);
+            return true;
         }
       }
     }
