@@ -103,12 +103,16 @@ const winPatterns = [
 /**
  *  Logic of Tic Tac Toe game
  */
-console.log("boxes", boxes);
-
-for (let i = 0; i < boxes.length; i++) {
-    console.log("Inside", boxes.length)
+for (let i = 0; i < boxes.length; i++) {    
     boxes[i].addEventListener("click", function() {
-        console.log("box:  ", boxes[i]);
-        console.log("Clicked");
+        if (turnO) {
+            // playerO
+            boxes[i].innerText = "O";
+            turnO = false;
+        } else {
+            // playerX
+            boxes[i].innerText = "X";
+            turnO = true;
+        }
     });
 }
