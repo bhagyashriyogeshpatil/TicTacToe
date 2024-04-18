@@ -15,7 +15,7 @@ body {
   font-weight: 600;
   background-color: #548687;
   margin: 0;
-  padding: 0; 
+  padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,84 +40,154 @@ body {
 }
 
 h1 {
-    font-family: 'Rammetto One', cursive;
-    padding-bottom: 1rem !important;
+  font-family: "Rammetto One", cursive;
+  padding-bottom: 1rem !important;
 }
 
 label {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 input {
-    box-shadow: 1px 1px 10px #b0d3e8;
-    border: 1px solid #b0d3e8;
-    padding: 0.7rem;
-    font-weight: bold;
-    width: 35%;
+  box-shadow: 1px 1px 10px #b0d3e8;
+  border: 1px solid #b0d3e8;
+  padding: 0.7rem;
+  font-weight: bold;
+  width: 35%;
 }
 
-input, label {
-    font-size: 100%;
-    margin: 0.5rem;
-    border-radius: 0.7rem;
+input,
+label {
+  font-size: 100%;
+  margin: 0.5rem;
+  border-radius: 0.7rem;
 }
 
 input::placeholder {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 /* Override default dark outline color */
 input:focus {
-    outline: none !important;
-    border-color: #7bb4e0;
+  outline: none !important;
+  border-color: #7bb4e0;
 }
 
 .button {
-    background: linear-gradient(to right, #FCCD4D, #F8B500);
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    width: 60%;
-    border-radius: 0.7rem;
-    box-shadow: 0 10px 20px -8px rgba(57,95,122,.7);
-    margin-top: 1rem;
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
+  background: linear-gradient(to right, #fccd4d, #f8b500);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 60%;
+  border-radius: 0.7rem;
+  box-shadow: 0 10px 20px -8px rgba(57, 95, 122, 0.7);
+  margin-top: 1rem;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover {
-    background: linear-gradient(to right, #F8B500, #FCCD4D);
+  background: linear-gradient(to right, #f8b500, #fccd4d);
 }
 
 /* Style top line of the game container, icons and text inside it */
 .top-line {
-    line-height: 2.5rem;
-    text-align: right;
-    padding-bottom: 0.5rem;
+  line-height: 2.5rem;
+  text-align: right;
+  padding-bottom: 0.5rem;
 }
 
 .user-icon {
-    font-size: 250%; 
-    float: left;
+  font-size: 250%;
+  float: left;
 }
 
 /* username display */
 .top-line p {
-    float: left;
+  float: left;
 }
 
 /* Style instructions icon*/
 #instructions-icon {
-    font-size: 250%;
-    float: right;
+  font-size: 250%;
+  float: right;
 }
 
-#login-screen, #phrase, .result-text {
-    text-transform: uppercase;
+#login-screen,
+#phrase,
+.result-text {
+  text-transform: uppercase;
 }
 
-/* Style of site footer */
+/* Style for message when no user input*/
+.user-log-error {
+  font-size: 90%;
+  color: #c9a7b0;
+  padding-top: 1.2rem;
+  padding: 1.2rem 0.5rem 0;
+}
+
+/* Modal with game instructions */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  outline: 0;
+  border-width: 2px !important;
+}
+
+#modal-header {
+  font-weight: bold;
+  font-family: "Rammetto One", cursive;
+  padding-bottom: 0.5rem;
+}
+
+.show-modal {
+  color: #cf2857;
+  width: 100%;
+  height: 30rem;
+  max-height: 30rem;
+  max-width: 50rem;
+  /* align-items: center; */
+  display: block;
+  z-index: 2;
+}
+
+.modal-content {
+  position: relative;
+  box-shadow: 1px 1px 20px #b0d3e8;
+  padding: 4rem 2rem;
+  display: block !important;
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  overflow: auto;
+  outline: 0;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-content strong {
+  display: block;
+  text-align: center;
+}
+
+.greyout-background {
+  background-color: rgba(84, 134, 135, 0.7);
+}
+
+/* Style of footer */
 footer {
   background-color: #1b212b;
   color: #fff;

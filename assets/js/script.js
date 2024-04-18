@@ -22,3 +22,42 @@ function runMainScreen() {
     document.getElementById("username").innerText = "";
     // document.getElementById("user").focus(); //Remove this comment letter//focus on input element with cursor ready for username input
 }
+
+/**
+ * Verification of the user name input on the log-in screen
+ */
+document.getElementById("user-log").addEventListener("click", checkUsername);
+
+function checkUsername() {
+    let username = document.getElementById("user").value.trim();
+
+    if (username.length >= 1 && username.length <= 12) {
+        mainGameScreen.style.display = "block";
+        mainLoginScreen.style.display = "none";
+        document.getElementById("user-icon").style.display = "block";
+        document.getElementById("username").innerText = username;
+    } else {
+        errorMessage.style.display = "block";
+        // document.getElementById("user").focus(); //remove this comment later
+        document.getElementById("user").value = "";
+    }
+}
+checkUsername();
+
+
+/**
+ * Show and close modal with game instructions
+ */
+getInstructions.addEventListener("click", showInstructions);
+
+function showInstructions() {
+    let modal = document.getElementById("myModal");
+    modal.classList.add("show-modal");
+    document.body.classList.add('greyout-background'); //grey out the background picture when modal pops-up.
+}
+
+function closeInstructions() {
+    let modal = document.getElementById("myModal");
+    modal.classList.remove("show-modal");
+    document.body.classList.remove('greyout-background');
+}
