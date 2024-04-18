@@ -108,6 +108,15 @@ input:focus {
   float: left;
 }
 
+#username {
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: none;
+  margin-left: 2%;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
 /* Style instructions icon*/
 #instructions-icon {
   font-size: 250%;
@@ -187,7 +196,32 @@ input:focus {
 }
 
 /* Game screen */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
+}
 
 
 

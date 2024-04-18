@@ -29,7 +29,8 @@ function runMainScreen() {
     msgContainer.style.display = "none";
     document.getElementById("user-icon").style.display = "none";
     document.getElementById("username").innerText = "";
-    // document.getElementById("user").focus(); //Remove this comment letter//focus on input element with cursor ready for username input
+    // Remove following comment letter
+    // document.getElementById("user").focus(); //focus on input element with cursor ready for username input
 }
 
 /**
@@ -47,7 +48,8 @@ function checkUsername() {
         document.getElementById("username").innerText = username;
     } else {
         errorMessage.style.display = "block";
-        // document.getElementById("user").focus(); //remove this comment later
+        // Remove following comment letter
+        // document.getElementById("user").focus(); 
         document.getElementById("user").value = "";
     }
 }
@@ -72,7 +74,7 @@ function closeInstructions() {
 }
 
 /**
- * Input of username using by pressing enter key
+ * Allow users to input their username by pressing the enter key
  */
 document.getElementById("user").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
