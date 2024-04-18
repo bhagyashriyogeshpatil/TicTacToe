@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tags for search engines -->
     <meta name="description"
-        content="Tic Tac Toe - Tic-tac-toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols, aiming to be the first to form a horizontal, vertical, or diagonal line.">
+        content="Tic Tac Toe - Tic-tac-toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols, aiming to be the first to form a horizontal, vertical, or diagonal line." />
     <meta name="keywords"
-        content="Tic-tac-toe, Game, Board, Strategy, Play, Challenge, Fun,  Entertainment, Family-friendly, Classic">
+        content="Tic-tac-toe, Game, Board, Strategy, Play, Challenge, Fun,  Entertainment, Family-friendly, Classic" />
     <!-- Title -->
     <title>Tic Tac Toe</title>
     <!-- Favicon -->
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-    
+    <div id="game-container">
+        <!-- Main screen with game title and user login -->
+        <div id="login-screen">
+            <p>Welcome To</p>
+            <h1 id="game-title">Tic Tac Toe Game</h1>
+
+            <div class="user-input">
+                <label for="user">Please enter your name</label>
+                <br />
+                <input type="text" id="user" name="user" maxlength="12" maxlength="10"
+                    placeholder="Type your name..." />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text">Thanks for playing!</p>
+        <div class="footer-content">
+            <div class="float-start">
+                <p>© Created by Bhagyashri Patil</p>
+            </div>
+
+            <!-- Links to contact form, github pages and social media -->
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noopener"
+                    aria-label="Visit us on LinkedIn (opens in new tab)"><i
+                        class="fa-brands fa-linkedin social-icon"></i></a>
+                <a href="https://github.com/" class="social-link" target="_blank" rel="noopener"
+                    aria-label="Check the website's GitHub page"><i class="fa-brands fa-github social-icon"></i></a>
+                <a href="https://twitter.com/" class="social-link" aria-label="Visit us on Twitter" target="_blank"><i
+                        class="fa-brands fa-twitter social-icon"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/2b6a1cc583.js" crossorigin="anonymous"></script>
+    <!-- JavaScript script-->
     <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>

@@ -1,3 +1,84 @@
-body{
-    background-color: blue;
+/* Google Fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap");
+
+/* Remove default values */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  background-color: #548687;
+  margin: 0;
+  padding: 0; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Style of game container */
+#game-container {
+  position: absolute;
+  text-align: center;
+  color: #1b212b;
+  box-sizing: border-box;
+  left: 50%;
+  top: 42%;
+  height: 80%;
+  width: 90%;
+  transform: translate(-50%, -45%);
+  max-height: 30rem;
+  max-width: 50rem;
+  padding: 1%;
+  flex: 1;
+}
+
+h1 {
+    font-family: 'Rammetto One', cursive;
+    padding-bottom: 1rem !important;
+}
+
+
+/* Style of site footer */
+footer {
+  background-color: #1b212b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.social-link:hover {
+  cursor: pointer;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0.5em 0.8em;
+  color: #eac066;
+}
+
+.social-icon:hover {
+  color: #980000;
+  text-shadow: 0px 0px 10px #eac066;
+}
+
+.social-icon:active {
+  transform: scale(1.1);
 }
