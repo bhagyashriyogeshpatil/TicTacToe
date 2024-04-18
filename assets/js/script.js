@@ -142,4 +142,29 @@ function showWinner(winner) {
     msgContainer.style.display = "block";
     newGameBtn.style.display = "block";
     mainGameScreen.style.display = "none";
+    disableBoxes();
 }
+
+function resetGame() {
+    turnO = true;
+    count = 0;
+    enableBoxes();
+    msgContainer.style.display = "none";
+    mainGameScreen.style.display = "block";
+}
+
+function disableBoxes() {
+    for (let box of boxes) {
+        box.disabled = true;
+    }
+}
+
+function enableBoxes() {
+    for (let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
+
+resetBtn.addEventListener("click", resetGame);
+newGameBtn.addEventListener("click", resetGame);
