@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
 let mainLoginScreen = document.getElementById("login-screen");
 let getInstructions = document.getElementById("instructions-icon");
 let errorMessage = document.getElementById("error-message");
+let mainGameScreen = document.getElementById("main-game-container");
+let resetBtn = document.getElementById("reset-btn");
+let newGameBtn = document.getElementById("new-btn");
+let msgContainer = document.getElementsByClassName("msg-container")[0];
+let msg = document.getElementById("msg");
+let boxes = document.getElementsByClassName("box");
 
 /**
 * Show the main screen with user log-in and instruction icon
@@ -18,6 +24,9 @@ let errorMessage = document.getElementById("error-message");
 function runMainScreen() {
     errorMessage.style.display = "none";
     mainLoginScreen.style.display = "block";
+    mainGameScreen.style.display = "none";
+    newGameBtn.style.display = "none";
+    msgContainer.style.display = "none";
     document.getElementById("user-icon").style.display = "none";
     document.getElementById("username").innerText = "";
     // document.getElementById("user").focus(); //Remove this comment letter//focus on input element with cursor ready for username input
