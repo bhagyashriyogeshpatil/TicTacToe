@@ -196,6 +196,14 @@ input:focus {
 }
 
 /* Game screen */
+#main-game-container {
+  /* Adjust positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -223,6 +231,21 @@ input:focus {
   background-color: #ffffc7;
 }
 
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
 
 
 
