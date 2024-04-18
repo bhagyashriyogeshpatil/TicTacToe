@@ -23,12 +23,16 @@
         <div id="login-screen">
             <p>Welcome To</p>
             <h1 id="game-title">Tic Tac Toe Game</h1>
-
             <div class="user-input">
                 <label for="user">Please enter your name</label>
                 <br />
                 <input type="text" id="user" name="user" maxlength="12" maxlength="10"
                     placeholder="Type your name..." />
+                <button class="button" id="user-log">Start Game</button>
+
+                <p class="user-log-error" id="error-message">
+                    Please try again. <br />Username must be between 1 and 12 characters.
+                </p>
             </div>
         </div>
     </div>

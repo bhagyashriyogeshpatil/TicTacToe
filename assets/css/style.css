@@ -44,6 +44,53 @@ h1 {
     padding-bottom: 1rem !important;
 }
 
+label {
+    margin-top: 0.5rem;
+}
+
+input {
+    box-shadow: 1px 1px 10px #b0d3e8;
+    border: 1px solid #b0d3e8;
+    padding: 0.7rem;
+    font-weight: bold;
+    width: 35%;
+}
+
+input, label {
+    font-size: 100%;
+    margin: 0.5rem;
+    border-radius: 0.7rem;
+}
+
+input::placeholder {
+    font-size: 80%;
+}
+
+/* Override default dark outline color */
+input:focus {
+    outline: none !important;
+    border-color: #7bb4e0;
+}
+
+.button {
+    background: linear-gradient(to right, #FCCD4D, #F8B500);
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 60%;
+    border-radius: 0.7rem;
+    box-shadow: 0 10px 20px -8px rgba(57,95,122,.7);
+    margin-top: 1rem;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #F8B500, #FCCD4D);
+}
+
+
 
 /* Style of site footer */
 footer {
