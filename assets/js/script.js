@@ -105,6 +105,7 @@ const winPatterns = [
  */
 for (let i = 0; i < boxes.length; i++) {    
     boxes[i].addEventListener("click", function() {
+        //logic for determining whose turn it is in the game, whether it's X's or O's.
         if (turnO) {
             // playerO
             boxes[i].innerText = "O";
@@ -114,5 +115,23 @@ for (let i = 0; i < boxes.length; i++) {
             boxes[i].innerText = "X";
             turnO = true;
         }
+        boxes[i].disabled = true;
+
+        let isWinner = checkWinner();
     });
 }
+
+function checkWinner() {
+    for (let i = 0; i < winPatterns.length; i++) {
+      let pattern = winPatterns[i];
+      let pos1Val = boxes[pattern[0]].innerText;
+      let pos2Val = boxes[pattern[1]].innerText;
+      let pos3Val = boxes[pattern[2]].innerText;
+  
+      if (pos1Val !== "" && pos2Val !== "" && pos3Val !== "") {
+        if (pos1Val === pos2Val && pos2Val === pos3Val) {
+            console.log("winner", pos1Val);
+        }
+      }
+    }
+  }
