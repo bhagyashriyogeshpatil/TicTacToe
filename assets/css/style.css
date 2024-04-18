@@ -245,9 +245,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-} 
-
-
+}
 
 /* Style of footer */
 footer {
@@ -285,4 +283,23 @@ footer {
 
 .social-icon:active {
   transform: scale(1.1);
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  #user-log,
+  input {
+    width: 50%;
+  }
+
+  input::placeholder {
+    font-size: 90%;
+  }
+
+  /* Style of game container */
+  #game-container {
+    width: 80%;
+    height: 30rem;
+    top: 45%;
+  }
 }
