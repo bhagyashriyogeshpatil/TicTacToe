@@ -121,6 +121,10 @@ for (let i = 0; i < boxes.length; i++) {
     });
 }
 
+/**
+ *  Logic for checking winner
+ */
+
 function checkWinner() {
     for (let i = 0; i < winPatterns.length; i++) {
       let pattern = winPatterns[i];
@@ -137,6 +141,9 @@ function checkWinner() {
     }
 }
 
+/**
+ *  Logic for showing winner message
+ */
 function showWinner(winner) {
     msg.innerText = "Congratulations, Winner is " + winner;
     msgContainer.style.display = "block";
@@ -145,6 +152,20 @@ function showWinner(winner) {
     disableBoxes();
 }
 
+/**
+ *  Logic for Game draw message
+ */
+function gameDraw() {
+    msg.innerText = "Game was a Draw.";
+    msgContainer.style.display = "block";
+    newGameBtn.style.display = "block";
+    mainGameScreen.style.display = "none";
+    disableBoxes();
+}
+
+/**
+ *  Logic to reset the game and disable all boxes when clicking the reset game or new game button
+ */
 function resetGame() {
     turnO = true;
     count = 0;
