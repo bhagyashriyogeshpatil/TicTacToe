@@ -53,6 +53,22 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - Implement a "Play Against Computer" feature.
 - Adding difficulty levels feature.
 
+## Wireframe
+- The wireframe for the mobile version of the website was created using Figma. While the implemented version may not match the exact layout of the wireframe due to changes made during development, the initial design provided valuable insights and a starting point for the development process.
+
+###### Login Screen Wireframe
+![Login Screen](assets/image/Wireframe/login-screen-wireframe.png)
+
+###### Instruction Modal Wireframe
+![Instruction Modal](assets/image/Wireframe/instruction-model-wireframe.png)
+
+###### Game Screen Wireframe
+![Game Screen](assets/image/Wireframe/game-screen-wireframe.png)
+
+###### Winner Message Wireframe
+![Winner Message](assets/image/Wireframe/winner_message.png)
+
+
 ## Testing 
 
 - HTML
