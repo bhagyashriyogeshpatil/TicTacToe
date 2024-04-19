@@ -27,3 +27,22 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 
 ![Instruction Modal Mobile](assets/image/media/instruction-modal-mobile.png)
 ![Instruction Modal Desktop](assets/image/media/instruction-modal-desktop.png)
+
+- __Game Screen__
+	- In this section, users can engage in the game, which features a 3x3 grid. The game involves two players, marked as X and O, taking turns. Additionally, users will find their username and user icon displayed in the top left corner.
+	- User will find a "Reset Game" button that allows user to begin the new game.
+
+![Game Screen Mobile](assets/image/media/game-screen-mobile.png)
+![Game Screen Desktop](assets/image/media/game-screen-desktop.png)
+
+- __Winner Message__
+	- In this section, once the game is completed a message will be shown indicating the winner or declaring a draw.
+
+![Winner Message Mobile](assets/image/media/winner-msg-mobile.png)
+![Winner Message Desktop](assets/image/media/winner-msg-desktop.png)
+
+### Features Left to Implements
+- Implement a "Play Against Computer" feature.
+- Adding difficulty levels feature.
+
+
