@@ -4,7 +4,7 @@ Tic Tac Toe game website is classic fun meets modern convenience! This project a
 
 Tic-tac-toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols, aiming to be the first to form a horizontal, vertical, or diagonal line.
 
-![Responsive Mockup](assets/image/media/TicTacToe-mockup.png)
+![Responsive Mockup](assets/image/media/tic-tac-toe-mockup.png)
 
 - - -
 ## Features 
@@ -12,42 +12,59 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - __Favicon__
     - The favicon on our Tic Tac Toe game website looks like a small Tic Tac Toe board, making it easy to recognize and nice to look at. It helps people know it's our website and reminds them of the game they're about to play. It's small so it fits nicely in the tabs of your web browser and makes the website feel complete.
 
-![ Favicon](assets/image/media/favicon-screenshot.png)
+###### Favicon
+![Favicon](assets/image/media/favicon-screenshot.png)
 ![]()
 
 - __Login Screen__
 	- In this section, users can type in their name to begin playing the game. The game won't start unless the user enters their name. If the user tries to start the game without entering their name, an error message will appear.
 	- You can begin the game by clicking the "Start Game" button. Additionally, there's an information (i) icon available for viewing the game's instructions and rules.
     
-
+###### Login Screen for Mobile
 ![Login Screen Mobile](assets/image/media/login-screen-mobile.png) 
+
+###### Login Screen for Desktop
 ![Login Screen Desktop](assets/image/media/login-screen-desktop.png)
+
+###### User Login Error Message
 ![User Login Error Message](assets/image/media/user-log-error-msg.png)
 
 - __Instruction Modal__
 	- This section provides instructions and rules on how to play the game. If the user clicks on the "i" icon, a modal with instructions will appear. There is a close button to close this instruction modal. 
 	- Instruction modal is available while playing the game.
 
+###### Instruction Modal for Mobile
 ![Instruction Modal Mobile](assets/image/media/instruction-modal-mobile.png)
+
+###### Instruction Modal for Desktop
 ![Instruction Modal Desktop](assets/image/media/instruction-modal-desktop.png)
 
 - __Game Screen__
 	- In this section, users can engage in the game, which features a 3x3 grid. The game involves two players, marked as X and O, taking turns. Additionally, users will find their username and user icon displayed in the top left corner.
 	- User will find a "Reset Game" button that allows user to begin the new game.
 
+###### Game Screen for Mobile
 ![Game Screen Mobile](assets/image/media/game-screen-mobile.png)
+
+###### Game Screen for Desktop
 ![Game Screen Desktop](assets/image/media/game-screen-desktop.png)
 
 - __Winner Message__
 	- In this section, once the game is completed a message will be shown indicating the winner or declaring a draw.
 
+###### Winner Message for Mobile
 ![Winner Message Mobile](assets/image/media/winner-msg-mobile.png)
+
+###### Winner Message for Desktop
 ![Winner Message Desktop](assets/image/media/winner-msg-desktop.png)
 
 - __Footer__
     - Within this section, users can access social media links and find copyright information.
 
+###### Footer for Mobile
 ![Footer Mobile](assets/image/media/footer-mobile.png)
+
+###### Footer for Desktop
 ![Footer Desktop](assets/image/media/footer-desktop.png)
 
 ### Features Left to Implements
@@ -76,16 +93,16 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - The wireframe for the mobile version of the website was created using Figma. While the implemented version may not match the exact layout of the wireframe due to changes made during development, the initial design provided valuable insights and a starting point for the development process.
 
 ###### Login Screen Wireframe
-![Login Screen](assets/image/Wireframe/login-screen-wireframe.png)
+![Login Screen](assets/image/wireframe/login-screen-wireframe.png)
 
 ###### Instruction Modal Wireframe
-![Instruction Modal](assets/image/Wireframe/instruction-model-wireframe.png)
+![Instruction Modal](assets/image/wireframe/instruction-model-wireframe.png)
 
 ###### Game Screen Wireframe
-![Game Screen](assets/image/Wireframe/game-screen-wireframe.png)
+![Game Screen](assets/image/wireframe/game-screen-wireframe.png)
 
 ###### Winner Message Wireframe
-![Winner Message](assets/image/Wireframe/winner_message.png)
+![Winner Message](assets/image/wireframe/winner_message.png)
 
 
 ### Colour Scheme
@@ -105,7 +122,7 @@ Google Fonts was used to import the chosen fonts for use in the site.
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-![HTML validation Report](assets/image/testing/Html-validation-screenshot.png)
+![HTML validation Report](assets/image/testing/html-validation-screenshot.png)
 
 - CSS
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
@@ -118,10 +135,10 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 ### Lighthouse Report
 
-###### Lighthouse Report Mobile
+###### Lighthouse Report for Mobile
 ![Lighthouse Report Mobile](assets/image/testing/lighthouse-report-mobile.png)
 
-###### Lighthouse Report Desktop
+###### Lighthouse Report for Desktop
 ![Lighthouse Report Desktop](assets/image/testing/lighthouse-report-desktop.png)
 
 
@@ -130,7 +147,7 @@ Google Fonts was used to import the chosen fonts for use in the site.
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
 | 1 |An error was displaying in the console, when the HTML file was created. ![Favicon Console error](assets/image/testing/favicon-console-404error.png) | Upon including `<link rel="shortcut icon" href="#">` in the <head> element of the HTML file, the error was resolved.|
-| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![JSHint Validator warning](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
+| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![JSHint Validator warning](assets/image/testing/jshint-validator-warning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
 | 3 |During JShint validation, an unused variable was detected. ![Unused Variable](assets/image/testing/unused-variable-closeInstructions.png) The cause of this issue is that I applied the onclick attribute to the close button in the HTML file.|To resolve this problem, I removed the onclick attribute from the close button in the HTML file. Additionally, I added an event listener to the close button in the JavaScript file.|
 | 4 |During JShint validation, a warning is issued for functions declared within loops. ![JSHint Validator warning Function within Loop](assets/image/testing/jshint-validator-warning-function-within-loop.png)| I adjusted the code to resolve the warning related to outer scoped variables. `createClickListener` function is used to create a click event listener for each box. I looked at a [Stack Overflow post](https://stackoverflow.com/questions/55894175/javascript-code-raising-warning-in-jshint-com-functions-declared-within-loops-r) to fix the warning.|
 
@@ -179,7 +196,7 @@ To clone the repository:
 
 HTML, CSS, Javascript
 
-### Frameworks, Libraries & Programs Used
+### Tools and Platforms Used
 
 * [Figma](https://www.figma.com/) - Used to create wireframes.
 
@@ -188,6 +205,8 @@ HTML, CSS, Javascript
 * [Github](https://github.com/) - To save and store the files for the website.
 
 * [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Coolors](https://coolors.co/) - Used for the selection of background and text colors.
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
@@ -199,8 +218,26 @@ HTML, CSS, Javascript
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-- - -
+* [W3C validator](https://validator.w3.org/) - To validate the HTML of this project.
 
+* [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/) - To validate the CSS of this project.
+
+* [Jshint validator](https://jshint.com/) -  To ensure the quality and correctness of our JavaScript code.
+
+
+- - -
+## Credits
+
+### Code Used
+- I used [this You Tube tutorial](https://www.youtube.com/watch?v=Y-GkMjUZsmM)  to gather inspiration and ideas for developing the Tic Tac Toe game website.
+
+### Acknowledgments
+- To the Code Institute course material, as the basis of all my knowledge is from here.
+- Stack Overflow as a valuable resource for solving a couple of issues especially JSHint warnings.
+
+I would like to acknowledge:
+
+* Jubril Akolade - My Code Institute Mentor, for his time, support and guidance throughout our calls.
 
 
     
