@@ -96,7 +96,9 @@ The color scheme is created using [Coolors](https://coolors.co/). I've utilized 
 ### Typography
 
 Google Fonts was used to import the chosen fonts for use in the site.
-Poppins font from Google fonts was used throughout the whole website with a fallback to sans-serif.
+* For the body of the website, I've utilized the Google font [Nunito](https://fonts.google.com/specimen/Nunito?query=Nunito).
+* For the Game Title, I've utilized the Google font [Rammetto](https://fonts.google.com/specimen/Rammetto+One?query=Rammetto).
+
 - - -
 ## Testing 
 
@@ -115,16 +117,14 @@ Poppins font from Google fonts was used throughout the whole website with a fall
       - The following metrics were returned: 
 
 
+### Solved Bugs
 
-### Bugs and Fixes:
-- After I made the HTML file, I noticed this error in the console.
-![Favicon Console error](assets/image/testing/favicon-console-404error.png)
-        - After adding `<link rel="shortcut icon" href="#">` in head element of HTML file, the error got removed.
+| No | Bug | How I solved the issue |
+| :--- | :--- | :--- |
+| 1 |An error was displaying in the console, when the HTML file was created. ![Favicon Console error](assets/image/testing/favicon-console-404error.png) | Upon including <link rel="shortcut icon" href="#"> in the <head> element of the HTML file, the error was resolved.|
+| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting /* jshint esversion: 6 */ into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
 
-- When validating with JShint, I came across some warnings regarding the use of the 'let' variable.
 
-![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)
 
-- After adding `/* jshint esversion: 6 */` in script.js file, warnings got resolved.
-- I used <a href="https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project" target="_blank"> for the solution.
+
     
