@@ -30,7 +30,6 @@ function runMainScreen() {
     msgContainer.style.display = "none";
     document.getElementById("user-icon").style.display = "none";
     document.getElementById("username").innerText = "";
-    // Remove following comment letter
     document.getElementById("user").focus(); //focus on input element with cursor ready for username input
 }
 
@@ -49,7 +48,6 @@ function checkUsername() {
         document.getElementById("username").innerText = username;
     } else {
         errorMessage.style.display = "block";
-        // Remove following comment letter
         document.getElementById("user").focus(); 
         document.getElementById("user").value = "";
     }

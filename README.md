@@ -6,6 +6,7 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 
 ![Responsive Mockup](assets/image/media/TicTacToe-mockup.png)
 
+- - -
 ## Features 
 ### Existing Features
 - __Favicon__
@@ -53,6 +54,24 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - Implement a "Play Against Computer" feature.
 - Adding difficulty levels feature.
 
+- - -
+## User Experience (UX)
+### User Stories
+
+#### **First Time Visitor Goals**
+- **Learn the Game Easily:** Provide clear instructions on how to play tic-tac-toe and make the game interface easy to understand.
+- **Device Responsiveness:** Design the game interface to work seamlessly across different devices, including desktops, tablets, and smartphones.
+- **Intuitive Navigation:** Keep the interface clean and user-friendly, with easily accessible buttons for starting a game and accessing settings
+
+#### **Returning Visitor Goals**
+- **Keep it Simple:** Make sure returning players find the game just as easy to play as the first time.
+
+#### **Frequent Visitor Goals:**
+- **Keep it Fun:** Add new challenges to keep players interested and coming back for more.
+
+- - -
+## Design
+
 ## Wireframe
 - The wireframe for the mobile version of the website was created using Figma. While the implemented version may not match the exact layout of the wireframe due to changes made during development, the initial design provided valuable insights and a starting point for the development process.
 
@@ -69,6 +88,16 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 ![Winner Message](assets/image/Wireframe/winner_message.png)
 
 
+### Colour Scheme
+The color scheme is created using [Coolors](https://coolors.co/). I've utilized #65A6A7 for the body background, #FCCD4D for buttons, #FFFFC7 for game board boxes, #CF2857 for instructional modals, and #C9A7B0 for user login error messages.
+
+![Color Palette](assets/image/media/tic_tac_toe-color_palette.png)
+
+### Typography
+
+Google Fonts was used to import the chosen fonts for use in the site.
+Poppins font from Google fonts was used throughout the whole website with a fallback to sans-serif.
+- - -
 ## Testing 
 
 - HTML
@@ -85,6 +114,8 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
     -  [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
 
+
+
 ### Bugs and Fixes:
 - After I made the HTML file, I noticed this error in the console.
 ![Favicon Console error](assets/image/testing/favicon-console-404error.png)
@@ -93,5 +124,7 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - When validating with JShint, I came across some warnings regarding the use of the 'let' variable.
 
 ![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)
-        - After adding `/* jshint esversion: 6 */` in script.js file, warnings got resolved.
-        - I used <a href="https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project" target="_blank"> for the solution.
+
+- After adding `/* jshint esversion: 6 */` in script.js file, warnings got resolved.
+- I used <a href="https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project" target="_blank"> for the solution.
+    
