@@ -121,11 +121,49 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 |An error was displaying in the console, when the HTML file was created. ![Favicon Console error](assets/image/testing/favicon-console-404error.png) | Upon including <link rel="shortcut icon" href="#"> in the <head> element of the HTML file, the error was resolved.|
-| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting /* jshint esversion: 6 */ into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
+| 1 |An error was displaying in the console, when the HTML file was created. ![Favicon Console error](assets/image/testing/favicon-console-404error.png) | Upon including `<link rel="shortcut icon" href="#">` in the <head> element of the HTML file, the error was resolved.|
+| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
+| 3 |During JShint validation, an unused variable was detected. ![Unused Variable](assets/image/testing/unused-variable-closeInstructions.png) The cause of this issue is that I applied the onclick attribute to the close button in the HTML file.|To resolve this problem, I removed the onclick attribute from the close button in the HTML file. Additionally, I added an event listener to the close button in the JavaScript file.|
 
 
+- - -
 
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Tic Tac Toe](https://bhagyashriyogeshpatil.github.io/TicTacToe/).
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [bhagyashriyogeshpatil/TicTacToe](https://github.com/bhagyashriyogeshpatil/TicTacToe).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [bhagyashriyogeshpatil/TicTacToe](https://github.com/bhagyashriyogeshpatil/TicTacToe)
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [bhagyashriyogeshpatil/TicTacToe](https://github.com/bhagyashriyogeshpatil/TicTacToe)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+- - -
 
 
 
