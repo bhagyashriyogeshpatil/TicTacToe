@@ -105,28 +105,58 @@ const winPatterns = [
 /**
  *  Logic of Tic Tac Toe game
  */
-for (let i = 0; i < boxes.length; i++) {    
-    boxes[i].addEventListener("click", function() {
+// for (let i = 0; i < boxes.length; i++) {    
+//     boxes[i].addEventListener("click", function() {
+//         //logic for determining whose turn it is in the game, whether it's X's or O's.
+//         if (turnO) {
+//             // playerO
+//             boxes[i].innerText = "O";
+//             turnO = false;
+//         } else {
+//             // playerX
+//             boxes[i].innerText = "X";
+//             turnO = true;
+//         }
+
+//         boxes[i].disabled = true;
+//         count++;
+
+//         let isWinner = checkWinner();
+
+//         if (count === 9 && !isWinner) {
+//             gameDraw();
+//         }
+//     });
+// }
+
+// Loop through boxes and attach event listeners
+for (let i = 0; i < boxes.length; i++) {
+    boxes[i].addEventListener("click", createClickListener(i));
+}
+
+// Function to create click event listener for each box
+function createClickListener(index) {
+    return function() {
         //logic for determining whose turn it is in the game, whether it's X's or O's.
         if (turnO) {
             // playerO
-            boxes[i].innerText = "O";
+            boxes[index].innerText = "O";
             turnO = false;
         } else {
             // playerX
-            boxes[i].innerText = "X";
+            boxes[index].innerText = "X";
             turnO = true;
         }
 
-        boxes[i].disabled = true;
+        boxes[index].disabled = true;
         count++;
 
-        let isWinner = checkWinner();
+        let winner = checkWinner();
 
-        if (count === 9 && !isWinner) {
+        if (count === 9 && !winner) {
             gameDraw();
         }
-    });
+    };
 }
 
 /**
