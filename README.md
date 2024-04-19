@@ -130,8 +130,13 @@ Google Fonts was used to import the chosen fonts for use in the site.
 ![CSS Validation Report](assets/image/testing/css_validation_screenshot.png)
 
 - JavaScript
-    -  [Jshint validator](https://jshint.com/)
-      - The following metrics were returned: 
+    -  No errors were found when passing through the official Jshint validator
+[Jshint validator](https://jshint.com/)
+	- The following metrics were returned: 
+	  - There are 14 functions in this file.
+	  - Function with the largest signature take 1 arguments, while the median is 0.
+	  - Largest function has 10 statements in it, while the median is 4.
+	  - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
 ### Lighthouse Report
 
