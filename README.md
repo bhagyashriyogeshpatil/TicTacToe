@@ -5,3 +5,5 @@ Tic Tac Toe game website is classic fun meets modern convenience! This project a
 Tic-tac-toe is a classic two-player game where players take turns marking spaces in a 3x3 grid with their respective symbols, aiming to be the first to form a horizontal, vertical, or diagonal line.
 
 ![Responsive Mockup](assets/image/media/TicTacToe-mockup.png)
+
+
