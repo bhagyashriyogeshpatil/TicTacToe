@@ -173,6 +173,33 @@ To clone the repository:
 
 - - -
 
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, Javascript
+
+### Frameworks, Libraries & Programs Used
+
+* [Figma](https://www.figma.com/) - Used to create wireframes.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [iloveimg](https://www.iloveimg.com/ ) To compress images
+
+* [Favicon.io](https://favicon.io/#google_vignette) To create favicon.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+- - -
 
 
 
