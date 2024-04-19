@@ -130,9 +130,9 @@ Google Fonts was used to import the chosen fonts for use in the site.
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
 | 1 |An error was displaying in the console, when the HTML file was created. ![Favicon Console error](assets/image/testing/favicon-console-404error.png) | Upon including `<link rel="shortcut icon" href="#">` in the <head> element of the HTML file, the error was resolved.|
-| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
+| 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![JSHint Validator warning](assets/image/testing/JShintValidatorWarning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
 | 3 |During JShint validation, an unused variable was detected. ![Unused Variable](assets/image/testing/unused-variable-closeInstructions.png) The cause of this issue is that I applied the onclick attribute to the close button in the HTML file.|To resolve this problem, I removed the onclick attribute from the close button in the HTML file. Additionally, I added an event listener to the close button in the JavaScript file.|
-
+| 4 |During JShint validation, a warning is issued for functions declared within loops. ![JSHint Validator warning Function within Loop](assets/image/testing/jshint-validator-warning-function-within-loop.png)| I adjusted the code to resolve the warning related to outer scoped variables. `createClickListener` function is used to create a click event listener for each box. I looked at a [Stack Overflow post](https://stackoverflow.com/questions/55894175/javascript-code-raising-warning-in-jshint-com-functions-declared-within-loops-r) to fix the warning.|
 
 - - -
 

@@ -105,30 +105,6 @@ const winPatterns = [
 /**
  *  Logic of Tic Tac Toe game
  */
-// for (let i = 0; i < boxes.length; i++) {    
-//     boxes[i].addEventListener("click", function() {
-//         //logic for determining whose turn it is in the game, whether it's X's or O's.
-//         if (turnO) {
-//             // playerO
-//             boxes[i].innerText = "O";
-//             turnO = false;
-//         } else {
-//             // playerX
-//             boxes[i].innerText = "X";
-//             turnO = true;
-//         }
-
-//         boxes[i].disabled = true;
-//         count++;
-
-//         let isWinner = checkWinner();
-
-//         if (count === 9 && !isWinner) {
-//             gameDraw();
-//         }
-//     });
-// }
-
 // Loop through boxes and attach event listeners
 for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", createClickListener(i));
