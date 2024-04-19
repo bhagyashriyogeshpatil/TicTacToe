@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 let mainLoginScreen = document.getElementById("login-screen");
 let getInstructions = document.getElementById("instructions-icon");
 let errorMessage = document.getElementById("error-message");
+let closeBtn = document.getElementById("close-btn");
 let mainGameScreen = document.getElementById("main-game-container");
 let resetBtn = document.getElementById("reset-btn");
 let newGameBtn = document.getElementById("newgame-btn");
@@ -65,6 +66,8 @@ function showInstructions() {
     modal.classList.add("show-modal");
     document.body.classList.add('greyout-background'); //grey out the background picture when modal pops-up.
 }
+
+closeBtn.addEventListener("click", closeInstructions);
 
 function closeInstructions() {
     let modal = document.getElementById("myModal");
