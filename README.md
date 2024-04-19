@@ -6,4 +6,8 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 
 ![Responsive Mockup](assets/image/media/TicTacToe-mockup.png)
 
-
+## Features 
+### Existing Features
+- __Favicon __
+	- The favicon on our Tic Tac Toe game website looks like a small Tic Tac Toe board, making it easy to recognize and nice to look at. It helps people know it's our website and reminds them of the game they're about to play. It's small so it fits nicely in the tabs of your web browser and makes the website feel complete.
+![ Favicon](assets/image/media/favicon-screenshot.png)
