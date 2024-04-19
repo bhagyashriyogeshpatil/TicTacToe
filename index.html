@@ -14,6 +14,10 @@
     <title>Tic Tac Toe</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/image/favicon/site.webmanifest">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -30,11 +34,11 @@
         <!-- Main screen with game title and user login -->
         <div id="login-screen">
             <p>Welcome To</p>
-            <h1 id="game-title">Tic Tac Toe Game</h1>
+            <h1 class="game-title">Tic Tac Toe Game</h1>
             <div class="user-input">
                 <label for="user">Please enter your name</label>
                 <br />
-                <input type="text" id="user" name="user" maxlength="12" maxlength="10"
+                <input type="text" id="user" name="user" maxlength="12"
                     placeholder="Type your name..." />
             </div>
             <button class="button" id="user-log">Start Game</button>
@@ -76,10 +80,10 @@
         <!-- Game Screen -->
         <div class="msg-container">
             <p id="msg">Winner</p>
-            <button class="button" id="new-btn">New Game</button>
+            <button class="button" id="newgame-btn">New Game</button>
         </div>
         <div id="main-game-container">
-            <h1 id="game-title">Tic Tac Toe Game</h1>
+            <h1 class="game-title">Tic Tac Toe Game</h1>
             <div class="container">
                 <div class="game">
                     <button class="box"></button>
@@ -95,8 +99,6 @@
             </div>
             <button class="button" id="reset-btn">Reset Game</button>
         </div>
-
-
     </div>
 
     <!-- Footer -->

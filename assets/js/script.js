@@ -13,7 +13,7 @@ let getInstructions = document.getElementById("instructions-icon");
 let errorMessage = document.getElementById("error-message");
 let mainGameScreen = document.getElementById("main-game-container");
 let resetBtn = document.getElementById("reset-btn");
-let newGameBtn = document.getElementById("new-btn");
+let newGameBtn = document.getElementById("newgame-btn");
 let msgContainer = document.getElementsByClassName("msg-container")[0];
 let msg = document.getElementById("msg");
 let boxes = document.getElementsByClassName("box");
@@ -30,7 +30,7 @@ function runMainScreen() {
     document.getElementById("user-icon").style.display = "none";
     document.getElementById("username").innerText = "";
     // Remove following comment letter
-    // document.getElementById("user").focus(); //focus on input element with cursor ready for username input
+    document.getElementById("user").focus(); //focus on input element with cursor ready for username input
 }
 
 /**
@@ -49,7 +49,7 @@ function checkUsername() {
     } else {
         errorMessage.style.display = "block";
         // Remove following comment letter
-        // document.getElementById("user").focus(); 
+        document.getElementById("user").focus(); 
         document.getElementById("user").value = "";
     }
 }
