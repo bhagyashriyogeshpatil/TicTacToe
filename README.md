@@ -116,6 +116,14 @@ Google Fonts was used to import the chosen fonts for use in the site.
     -  [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
 
+### Lighthouse Report
+
+###### Lighthouse Report Mobile
+![Lighthouse Report Mobile](assets/image/testing/lighthouse-report-mobile.png)
+
+###### Lighthouse Report Desktop
+![Lighthouse Report Desktop](assets/image/testing/lighthouse-report-desktop.png)
+
 
 ### Solved Bugs
 
@@ -164,6 +172,7 @@ To clone the repository:
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 - - -
+
 
 
 
