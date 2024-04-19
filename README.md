@@ -53,4 +53,29 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 - Implement a "Play Against Computer" feature.
 - Adding difficulty levels feature.
 
+## Testing 
 
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+
+![HTML validation Report](assets/image/testing/Html-validation-screenshot.png)
+
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+![CSS Validation Report](assets/image/testing/css_validation_screenshot.png)
+
+- JavaScript
+    -  [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+
+### Bugs and Fixes:
+- After I made the HTML file, I noticed this error in the console.
+![Favicon Console error](assets/image/testing/favicon-console-404error.png)
+        - After adding `<link rel="shortcut icon" href="#">` in head element of HTML file, the error got removed.
+
+- When validating with JShint, I came across some warnings regarding the use of the 'let' variable.
+
+![Favicon Console error](assets/image/testing/JShintValidatorWarning.png)
+        - After adding `/* jshint esversion: 6 */` in script.js file, warnings got resolved.
+        - I used <a href="https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project" target="_blank"> for the solution.
