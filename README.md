@@ -119,17 +119,19 @@ Google Fonts was used to import the chosen fonts for use in the site.
 - - -
 ## Testing 
 
-- HTML
+### Code Validation 
+
+- **Html Validation**
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
 ![HTML validation Report](assets/image/testing/html-validation-screenshot.png)
 
-- CSS
+- **CSS Validation**
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
 ![CSS Validation Report](assets/image/testing/css_validation_screenshot.png)
 
-- JavaScript
+- **JavaScript Validation**
     -  No errors were found when passing through the official Jshint validator
 [Jshint validator](https://jshint.com/)
 	- The following metrics were returned: 
@@ -146,7 +148,6 @@ Google Fonts was used to import the chosen fonts for use in the site.
 ###### Lighthouse Report for Desktop
 ![Lighthouse Report Desktop](assets/image/testing/lighthouse-report-desktop.png)
 
-
 ### Solved Bugs
 
 | No | Bug | How I solved the issue |
@@ -155,6 +156,20 @@ Google Fonts was used to import the chosen fonts for use in the site.
 | 2 |While validating with JShint, I encountered some warnings related to the usage of the 'let' variable.![JSHint Validator warning](assets/image/testing/jshint-validator-warning.png)| The warnings were resolved after inserting `/* jshint esversion: 6 */` into the script.js file.I referred to [this solution](https://stackoverflow.com/questions/61764048/i-cant-fix-the-let-warning-in-jshint-plugin-for-vscode-in-all-the-new-project) for resolution.|
 | 3 |During JShint validation, an unused variable was detected. ![Unused Variable](assets/image/testing/unused-variable-closeInstructions.png) The cause of this issue is that I applied the onclick attribute to the close button in the HTML file.|To resolve this problem, I removed the onclick attribute from the close button in the HTML file. Additionally, I added an event listener to the close button in the JavaScript file.|
 | 4 |During JShint validation, a warning is issued for functions declared within loops. ![JSHint Validator warning Function within Loop](assets/image/testing/jshint-validator-warning-function-within-loop.png)| I adjusted the code to resolve the warning related to outer scoped variables. `createClickListener` function is used to create a click event listener for each box. I looked at a [Stack Overflow post](https://stackoverflow.com/questions/55894175/javascript-code-raising-warning-in-jshint-com-functions-declared-within-loops-r) to fix the warning.|
+
+### Manual Testing
+| Feature | Expected Outcome | Testing Performed | Result      |
+|---------|------------------|-------------------|-------------|
+| User Login| - Prompt for username input upon page load.| Loaded the page.| Pass|
+|   | - User can enter a valid username (1-12 characters).| Entered a valid username and clicked "Start Game."      | Pass |
+|   | - Error message displayed for invalid username.| Entered an empty username and clicked "Start Game."     | Pass |
+|   |  | Entered a username using only spaces. |  Pass |
+|   |  | Entered a username longer than 12 characters. |  Pass |
+| Game Instructions  | - Modal with game instructions appears upon click. | Clicked on the instructions icon. | Pass |
+|   | - Modal contains a close button. | Clicked the close button on the modal. |  Pass |
+| Tic Tac Toe Gameplay | - Players can place symbols (X or O) in empty boxes. | Clicked on various boxes to place X and O symbols. | Pass |
+|   | - Correct identification of winner.  | Created winning patterns. |  Pass  |
+|   | - Correct identification of draw. | Filled the entire board without a winner. | Pass |
 
 - - -
 
