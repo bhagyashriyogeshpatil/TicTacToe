@@ -159,7 +159,7 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 ### Manual Testing
 | Feature | Expected Outcome | Testing Performed | Result      |
-|---------|------------------|-------------------|-------------|
+|:--------|:----------------|:-------------------|:-------------|
 | User Login| - Prompt for username input upon page load.| Loaded the page.| Pass|
 |   | - User can enter a valid username (1-12 characters).| Entered a valid username and clicked "Start Game."      | Pass |
 |   | - Error message displayed for invalid username.| Entered an empty username and clicked "Start Game."     | Pass |
@@ -171,6 +171,24 @@ Google Fonts was used to import the chosen fonts for use in the site.
 |   | - Correct identification of winner.  | Created winning patterns. |  Pass  |
 |   | - Correct identification of draw. | Filled the entire board without a winner. | Pass |
 
+### Testing User Stories
+
+| Test User Stories | Expected Outcome | Testing Performed   | Result |
+|:-------------------|:------------------|:---------------------|:--------|
+| 1. As a player, I want to be able to input my name within the character limit | Entered names within the character limit  | Attempted to input names within the allowed character limit | Pass |
+| 2. As a player, I want to access and close the game instructions | Instructions can be accessed and closed | Clicked on instructions icon, successfully closed modal | Pass |
+| 3. As a player, I want the game to start with an empty grid | Game starts with an empty grid | Entered a name, clicked "Start Game" button | Pass |
+| 4. As a player, I expect the marks on the grid to alternate between X and O | Marks alternate between X and O | Clicked on boxes, observed alternation | Pass |
+| 5. As a player, I expect the game to correctly identify a win condition (3 marks in a row) | Correctly identifies a win | Achieved win conditions horizontally, vertically, diagonally| Pass |
+| 6. As a player, I expect the game to recognize a draw condition when all boxes are filled | Recognizes a draw when all boxes are filled | Filled all boxes without a winner  | Pass |
+| 7. As a player, I want the ability to reset the game without starting a new round | Resets the game without starting a new round | Clicked "Reset Game" button during a game | Pass |
+| 8. As a player, I want to reset the game for a new round | Resets the game for a new round | Clicked "New Game" button after a game | Pass |
+| 9. As a player, I expect all elements to display correctly | All elements display correctly | Verified icons, buttons, and text | Pass |
+| 10. As a player, I expect the game layout to be consistent across browsers and devices | Game layout is consistent across browsers/devices | Checked on different environments | Pass |
+| 11. As a player, I expect the game to work on different browsers | Game works on different browsers | Tested on Chrome, Firefox, and Edge  | Pass |
+| 12. As a player, I expect error messages to display for invalid inputs| Error messages display for invalid inputs | Entered a name longer than 12 characters | Pass |
+| 13. As a player, I expect to distinguish between X and O marks | Players can distinguish between X and O marks | Played multiple rounds observing marks | Pass |
+| 14. As a player, I expect the game interface to adapt to different screen sizes | Game interface adapts to different screen sizes | Tested on desktop, tablet, and mobile  platforms using Chrome's devtools | Pass |
 - - -
 
 ## Deployment & Local Development
