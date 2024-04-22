@@ -6,6 +6,8 @@ Tic-tac-toe is a classic two-player game where players take turns marking spaces
 
 ![Responsive Mockup](assets/image/media/tic-tac-toe-mockup.png)
 
+The live link can be found by clicking [here](https://bhagyashriyogeshpatil.github.io/TicTacToe/).
+
 - - -
 ## Features 
 ### Existing Features
