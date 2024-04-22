@@ -145,7 +145,7 @@ The live link can be found by clicking [here](https://bhagyashriyogeshpatil.gith
 - - -
 ## Design
 
-## Wireframe
+### Wireframe
 - The wireframe for the mobile version of the website was created using Figma. While the implemented version may not match the exact layout of the wireframe due to changes made during development, the initial design provided valuable insights and a starting point for the development process.
 
 ###### Login Screen Wireframe
